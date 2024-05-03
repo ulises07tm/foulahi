@@ -422,6 +422,16 @@ iframe {
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /* logo */
+    .icono {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 7rem;
+        border: none;
+    }
+    
+    /* cantina */
     .grid-container {
         display: grid;
         grid-template-columns: 3fr;
@@ -446,8 +456,11 @@ iframe {
 /* .grid-container .grid-aside img {
     width: 20%;
 } */
+
 /* tablet */
 @media screen and (min-width: 768px) and(max-width: 1023px) {
+    
+    /* cantina */
     .grid-container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -462,8 +475,11 @@ iframe {
         grid-row-gap: 1rem; */
     }
 }
+
 /* dekstop */
 @media screen and (min-width: 1024px) {
+    
+    /* cantina */
     .grid-container {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -477,6 +493,8 @@ iframe {
         /* grid-column-gap: 1rem;
         grid-row-gap: 1rem; */
     }
+
+    /* quincho */
     .galeria {
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: repeat(3, 1fr) ;
