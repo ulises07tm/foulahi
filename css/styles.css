@@ -41,7 +41,7 @@ header {
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
 }
 .separacion {
