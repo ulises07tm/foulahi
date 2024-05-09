@@ -12,7 +12,7 @@ aedd94 (verde claro)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid red; */
+    border: solid red;
     /* max-width: 1200px;  */
 }
 html {
@@ -38,46 +38,9 @@ header {
     margin-left: 15rem;
     border: none;
 }
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.separacion {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center;
-}
 /* menu de nav */
 header nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center;
-    list-style-type: none;
-    text-align: right;
     margin-right: 3rem;
-}
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    text-align: right;
-    margin-right: 3rem;
-}
-header nav ul li a{
-    color: white;
-    font-size: 4.2rem;
-    font-weight: 400;
-    border-right: solid 0.2rem #aedd94;
-    padding-right: 5rem;
-    padding-left: 5rem;   
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
 }
 header nav ul.navbar-nav li.nav-item a.nav-link{
     color: white;
@@ -85,25 +48,15 @@ header nav ul.navbar-nav li.nav-item a.nav-link{
     font-weight: 400;
     border-right: solid 0.2rem #aedd94;
     padding-right: 5rem;
-    padding-left: 5rem;   
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-left: 5rem; 
+    padding-top: 0rem;
+    padding-bottom: 0rem;  
 }
-/* .color-menu{
-    color: white;
-    font-size: 4.2rem;
-    font-weight: 400;
-    border-right: solid 0.2rem #aedd94;
-    padding-right: 5rem;
-    padding-left: 5rem;   
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-} */
 header nav ul.navbar-nav li.nav-item a.nav-link:hover, footer nav a svg:hover,div a svg:hover {
     color: #aedd94;
 }
 .none-border {
-    border: none;
+    border-right: none !important;
 }
 
 /* enlaces */
@@ -235,13 +188,11 @@ table tbody tr td {
 border: solid 0.1rem #aedd94;
 padding: 3rem;
 }
-/* .estirado-vertical {
-    height: 93rem;
-} */
 .estirado-horizontal {
     width: 100%;
 }
 /* termina reserva */
+
 .tablas-precios {
     display: flex;
     flex-direction: row;
@@ -410,14 +361,14 @@ footer nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     width: 33%;
 }
 .div-copy {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 33%;
 }
 .div-redes {
@@ -435,8 +386,8 @@ iframe {
 }
 /* whatsapp */
 .btn-wapp {
-    width: 7rem;
-    height: 7rem;
+    width: 3rem;
+    height: 3rem;
 }
 .div-wap {
     display: flex;
@@ -446,14 +397,17 @@ iframe {
 }
 /* instagram */
 .btn-ig {
-    width: 7rem;
-    height: 7rem;
+    width: 3rem;
+    height: 3rem;
 }
 .div-ig {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content:flex-start;
     align-items: center;
+}
+.medida {
+    width: 50%;
 }
 
 /* responsive */
@@ -461,25 +415,113 @@ iframe {
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    /* header */
+
     /* logo */
     .icono {
+        width: 7rem;
+        height: 7em;
+        margin-left: 4rem;
+    }
+    /* menu de nav */
+    header nav ul.navbar-nav li.nav-item a.nav-link{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        border: none;
+        padding-left: 5rem; 
+        padding-top: 1rem;
+        padding-bottom: 0rem;  
+    }
+
+    /* titulos */
+    h1 {
+        color: white;
+        font-size: 2rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    .ti-corto {
+        background-color: #234015;
+        border: solid 0.2rem #aedd94;
+        margin: 2rem;
+        width: 15rem;
+        padding:1.3rem;
+    }
+    .ti-largo {
+        background-color: #234015;
+        border: solid 0.4rem #aedd94;
+        margin: 6rem;
+        width: 55rem;
+        padding:1.5rem;
+    } 
+    
+    .imagen {
+        width: 70%;
+        height: 100%;
+        border: solid 0.2rem #aedd94;
+        object-fit: cover;
+    }
+
+    /* boton hace tu reserva */
+    .btn-reserva {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 3rem;
+    }
+    .btn-wpp {
+        display: none;
+    }
+    /* footer */
+
+    footer p {
+        color: white;
+        font-size: 0.5rem;
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .medida {
+        height: 20%;
+    } 
+    
+    /* mapa */
+    iframe {
         width: 10rem;
-        height: 10rem;
-        margin-left: 7rem;
+        height: 5rem;
+        margin: 2rem;
     }
-    .menu {
+    .div-redes {
+        height: 9.9rem;
+    }
+    /* whatsapp */
+    .btn-wapp {
+        width: 1rem;
+        height: 1rem;
+    }
+    /* .div-wap {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
+    } */
+
+    /* instagram */
+    .btn-ig {
+        width: 1rem;
+        height: 1rem;
     }
-    .color-menu {
-        text-align: start;
-        font-size: 1rem;
-        border-left: solid 0.2rem #aedd94;
-        border-right: none;
-        padding: none;
-    }
+    /* .div-ig {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+    } */
+
+
     /* cantina */
     .grid-container {
         display: grid;
