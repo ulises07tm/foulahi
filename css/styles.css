@@ -121,6 +121,7 @@ h2 {
 }
 .imagen {
     width: 70%;
+    height: 100%;
     border: solid 0.5rem #aedd94;
     object-fit: cover;
 }
@@ -389,7 +390,7 @@ footer nav {
 iframe {
     width: 40rem;
     height: 15rem;
-    margin: 2rem;
+    margin: 4rem;
 }
 /* whatsapp */
 .btn-wapp {
@@ -427,15 +428,15 @@ iframe {
     /* logo */
     .icono {
         width: 7rem;
-        height: 7em;
+        height: 7rem;
         margin-left: 4rem;
     }
     /* menu de nav */
     header nav ul.navbar-nav li.nav-item a.nav-link{
         font-size: 1.2rem;
         border: none;
-        padding-left: 5rem; 
-        padding-bottom: 1rem;  
+        padding-left: 2.5rem; 
+        padding-bottom: 2.5rem;  
     }
 
     /* titulos */
@@ -445,7 +446,8 @@ iframe {
     }
     .ti-corto {
         border: solid 0.2rem #aedd94;
-        margin: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         width: 11rem;
         padding: 1rem;
     }
@@ -461,13 +463,16 @@ iframe {
     .imagen {
         border: solid 0.1rem #aedd94;
         object-fit: cover;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
     }
 
     /* boton hace tu reserva */
     .btn-reserva {
     font-size: 1.5rem;
     font-weight: 300;
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     }
     .btn-reserva a {
         font-size: 1rem;
@@ -479,9 +484,9 @@ iframe {
     
     /* reserva */
     table {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     border: solid 0.1rem #aedd94;
-    margin: 0rem;
+    margin: 1rem;
     }
     table thead tr th {
         border: solid 0.1rem #aedd94 ;
@@ -509,11 +514,17 @@ iframe {
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
         }
+    .tablas-precios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
     aside {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
     aside img {
         width: 40%;
@@ -582,6 +593,10 @@ iframe {
         height: 1.8rem;
     }
     
+    header nav ul.navbar-nav li.nav-item a.nav-link:hover, footer nav a svg:hover,div a svg:hover {
+        display: none;
+    }
+
     /* footer */
     
     footer p {
@@ -615,7 +630,82 @@ iframe {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) and(max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* header */
+
+    /* logo */
+    .icono {
+        width: 12rem;
+        height: 12rem;
+        margin-left: 7rem;
+    }
+    /* menu de nav */
+    header nav ul.navbar-nav li.nav-item a.nav-link{
+        font-size: 1.7rem;
+        border: none;
+        padding-left: 2.5rem; 
+        padding-bottom: 2.5rem;  
+    }
+
+    /* titulos */
+    h1 {
+        border: solid 0.2rem #aedd94;
+        font-size: 3rem;
+    }
+    .ti-corto {
+        border: solid 0.2rem #aedd94;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        width: 15rem;
+        padding: 1.5rem;
+    }
+    .ti-largo {
+        border: solid 0.2rem #aedd94;
+        margin: 3rem;
+        width: 26rem;
+        padding:1.5rem;
+    } 
+    
+    /* index */
+    
+    .imagen {
+        border: solid 0.1rem #aedd94;
+        object-fit: cover;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    /* boton hace tu reserva */
+    .btn-reserva {
+    font-weight: 300;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    }
+    .btn-reserva a {
+        border: solid 0.1rem #aedd94;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    /* termina index */
+    
+    /* reserva */
+    table {
+        font-size: 2rem;
+    border: solid 0.1rem #aedd94;
+    margin-top: 3rem;
+    }
+    table thead tr th {
+        border: solid 0.1rem #aedd94 ;
+        padding: 1.5rem;
+    }
+    table tbody tr td {
+        border: solid 0.1rem #aedd94 ;
+        padding: 1.5rem;
+    }
+
+    /* termina reserva */
     
     /* cantina */
     .grid-container {
@@ -631,11 +721,35 @@ iframe {
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
     }
+    .tablas-precios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    aside img {
+        width: 100%;
+        height: 100%;
+    }
+    .tamaño-icono {
+        width: 4.5rem; 
+        height: 4.5rem,
+    }   
+    .borde {
+        padding: 1.3rem;
+    }
+    p {
+        font-size: 1.7rem;
+    }
+    
+    /* termina cantina */
 
     /* quincho */
     .galeria {
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: repeat(3, 1fr) ;
+        margin-top: 4rem;
+        margin-bottom: 5.3rem;
     }
     .galeria img:nth-child(1) {
         grid-column: 1/2;
@@ -665,6 +779,61 @@ iframe {
         grid-column: 3/4;
         grid-row: 3/4 ;
     } 
+    /* termina quincho */
+    
+    
+    /* btn de whatsapp */
+    .btn-wpp {
+        width: 5rem;
+        height: 5rem;
+        padding: 1.5rem;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    .btn-wpp-tamaño {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    header nav ul.navbar-nav li.nav-item a.nav-link:hover, footer nav a svg:hover,div a svg:hover {
+        display: none;
+    }
+
+    /* footer */
+    
+    footer p {
+        font-size: 1.5rem;
+    }
+    .medida {
+        height: 20%;
+    } 
+    
+    /* mapa */
+    iframe {
+        width: 20rem;
+        height: 7.5rem;
+        margin: 0rem;
+        margin-left: 1.4rem;
+    }
+    .div-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 9.9rem;
+    }
+    /* whatsapp */
+    .btn-wapp {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    /* instagram */
+    .btn-ig {
+        width: 2rem;
+        height: 2rem;
+    }
+    /* termina footer */
 }
 
 /* dekstop */
