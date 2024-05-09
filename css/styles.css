@@ -686,6 +686,9 @@ iframe {
     .navbar-toggler {
         border: 1px solid #aedd94;
     }
+    header nav button {
+        margin-right: 3rem;
+    }
 
     /* titulos */
     h1 {
