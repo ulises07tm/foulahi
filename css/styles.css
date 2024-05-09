@@ -121,7 +121,6 @@ h2 {
 }
 .imagen {
     width: 70%;
-    height: 73rem;
     border: solid 0.5rem #aedd94;
     object-fit: cover;
 }
@@ -344,6 +343,10 @@ p {
     bottom: 3rem;
     right: 3rem;
 }
+.btn-wpp-tamaño {
+    width: 4rem;
+    height: 4rem;
+}
 /* footer */
 footer {
     background-color: #234015;
@@ -429,102 +432,67 @@ iframe {
     }
     /* menu de nav */
     header nav ul.navbar-nav li.nav-item a.nav-link{
-        color: white;
         font-size: 1.2rem;
-        font-weight: 400;
         border: none;
         padding-left: 5rem; 
-        padding-top: 1rem;
-        padding-bottom: 0rem;  
+        padding-bottom: 1rem;  
     }
 
     /* titulos */
     h1 {
-        color: white;
+        border: solid 0.2rem #aedd94;
         font-size: 2rem;
-        font-family: "Rubik", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
     }
     .ti-corto {
-        background-color: #234015;
         border: solid 0.2rem #aedd94;
         margin: 2rem;
-        width: 15rem;
-        padding:1.3rem;
+        width: 11rem;
+        padding: 1rem;
     }
     .ti-largo {
-        background-color: #234015;
-        border: solid 0.4rem #aedd94;
+        border: solid 0.2rem #aedd94;
         margin: 6rem;
         width: 55rem;
         padding:1.5rem;
     } 
     
+    /* index */
+    
     .imagen {
-        width: 70%;
-        height: 100%;
-        border: solid 0.2rem #aedd94;
+        border: solid 0.1rem #aedd94;
         object-fit: cover;
     }
 
     /* boton hace tu reserva */
     .btn-reserva {
-    text-align: center;
     font-size: 1.5rem;
     font-weight: 300;
     margin: 3rem;
     }
-    .btn-wpp {
-        display: none;
+    .btn-reserva a {
+        font-size: 1rem;
+        border: solid 0.1rem #aedd94;
+        padding: 0.8rem;
     }
-    /* footer */
-
-    footer p {
-        color: white;
-        font-size: 0.5rem;
-        font-family: "Rubik", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-    }
-    .medida {
-        height: 20%;
-    } 
     
-    /* mapa */
-    iframe {
-        width: 10rem;
-        height: 5rem;
-        margin: 2rem;
+    /* termina index */
+    
+    /* reserva */
+    table {
+        font-size: 1.3rem;
+    border: solid 0.1rem #aedd94;
+    margin: 0rem;
     }
-    .div-redes {
-        height: 9.9rem;
+    table thead tr th {
+        border: solid 0.1rem #aedd94 ;
+        padding: 1.5rem;
     }
-    /* whatsapp */
-    .btn-wapp {
-        width: 1rem;
-        height: 1rem;
+    table tbody tr td {
+        border: solid 0.1rem #aedd94 ;
+        padding: 1.5rem;
     }
-    /* .div-wap {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    } */
 
-    /* instagram */
-    .btn-ig {
-        width: 1rem;
-        height: 1rem;
-    }
-    /* .div-ig {
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-start;
-        align-items: center;
-    } */
-
+    /* termina reserva */
 
     /* cantina */
     .grid-container {
@@ -540,24 +508,15 @@ iframe {
         ;
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
-    }
-
-    /* .tablas-precios {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    } */
-    table {
-        font-size: 1rem;
-        
-    }
+        }
     aside {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top: 2rem;
     }
     aside img {
-        width: 50%;
+        width: 40%;
     }
     .tamaño-icono {
         width: 3rem; 
@@ -569,6 +528,8 @@ iframe {
     p {
         font-size: 1rem;
     }
+    
+    /* termina cantina */
 
     /* quincho */
     .galeria {
@@ -603,6 +564,54 @@ iframe {
         grid-column: 1/2;
         grid-row: 7/8;
     }
+
+    /* termina quincho */
+    
+    
+    /* btn de whatsapp */
+    .btn-wpp {
+        width: 3rem;
+        height: 3rem;
+        padding: 1.5rem;
+        position: fixed;
+        bottom: 0.4rem;
+        right: 0.4rem;
+    }
+    .btn-wpp-tamaño {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    
+    /* footer */
+    
+    footer p {
+        font-size: 0.7rem;
+    }
+    .medida {
+        height: 20%;
+    } 
+    
+    /* mapa */
+    iframe {
+        width: 10rem;
+        height: 5rem;
+        margin: 2rem;
+    }
+    .div-redes {
+        height: 9.9rem;
+    }
+    /* whatsapp */
+    .btn-wapp {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    /* instagram */
+    .btn-ig {
+        width: 1rem;
+        height: 1rem;
+    }
+    /* termina footer */
 }
 
 /* tablet */
