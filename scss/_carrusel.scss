@@ -1,0 +1,23 @@
+/* imagenes */
+    .imagen-div {
+        @include flex (column, center, center)
+    }
+
+    .imagen {
+        width: 70%;
+        height: 100%;
+        border: $borde;
+        object-fit: cover;
+
+        @include mobile {
+            border: $bordefino;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        @include tablet {
+            border: $bordefino;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+    }

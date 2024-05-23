@@ -1,0 +1,101 @@
+    /* boton hace tu reserva */
+    .btn-reserva {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        margin: 4rem;
+
+        @include mobile {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 3rem;
+            margin-bottom: 3.5rem;
+        }
+
+        @include tablet {
+            font-weight: 300;
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+        }
+
+        
+        & a {
+            @extend %fondofino;
+            padding: 1rem;
+
+            @include mobile {
+                font-size: 1.3rem;
+                padding: 0.8rem;
+            }
+
+            @include tablet {
+                font-size: 2rem;
+            }
+            
+            &:hover {
+                color: $lightgreen;
+
+                @include mobile {
+                    display: none
+                }
+
+                @include tablet {
+                    display: none
+                }
+            }
+        }
+    }
+
+    /* btn de whatsapp */
+    .btn-wpp {
+        @include sizes (6.5rem, 6.5rem);
+        color: white;
+        background-color: green;
+        border-radius: 50% ;
+        padding: 2.5rem;
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+
+        @include mobile {
+            @include sizes (3rem, 3rem);
+            padding: 1.5rem;
+            bottom: 0.4rem;
+            right: 0.4rem;
+        }
+
+        @include tablet {
+            @include sizes (5rem, 5rem);
+            padding: 1.5rem;
+            bottom: 1rem;
+            right: 1rem;
+        }
+    }
+    
+    .btn-wpp-tamaño {
+        @include sizes (4rem, 4rem);
+        
+        @include mobile {
+            @include sizes (1.8rem, 1.8rem);
+        }
+
+        @include tablet {
+            @include sizes (3.3rem, 3.3rem);
+        }
+        
+        &:hover {
+            color: $lightgreen;
+
+            @include mobile {
+                display: none;
+            }
+
+            @include tablet {
+                display: none;
+            }
+        
+        }
+        
+    }
+
+

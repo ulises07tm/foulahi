@@ -1,0 +1,62 @@
+/* encabezados */
+        h1 {
+            font-size: 6rem;
+            font-weight: 400;
+            text-align: center;
+
+            @include mobile {
+                font-size: 2rem;
+            }
+            
+            @include tablet {
+                font-size: 3rem;
+            }
+
+            }
+
+            .ti-corto {
+                @extend %fondo;
+                margin: 6rem;
+                width: 30rem;
+                padding:1.3rem;
+
+                @include mobile {
+                    @include fondofino;
+                    margin-top: 3rem;
+                    margin-bottom: 2rem;
+                    width: 11rem;
+                    padding: 1rem;
+                }
+
+                @include tablet {
+                    @include fondofino;
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    width: 15rem;
+                    padding: 1.5rem;
+                }
+
+            }
+        
+            .ti-largo {
+                @extend %fondo;
+                margin: 6rem;
+                width: 55rem;
+                padding:1.5rem;
+
+                @include mobile {
+                    @include fondofino;
+                    margin-top: 3rem;
+                    margin-bottom: 2rem;
+                    width: 18rem;
+                    padding:1rem;
+                    }
+
+                @include tablet {
+                    @include fondofino;
+                    margin: 3rem;
+                    width: 26rem;
+                    padding:1.5rem;
+                }
+
+            } 

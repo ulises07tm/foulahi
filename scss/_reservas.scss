@@ -1,0 +1,75 @@
+.acomodo {
+    @extend %flex-row-center;
+    align-items: center;
+
+    @include mobile {
+        flex-direction:column;
+    }
+
+    @include tablet {
+        flex-direction:column;
+    }
+}
+.precios {
+    @include flex (column, space-evenly, center);
+
+    @include mobile {
+        flex-direction: row;
+        justify-content: space-between; 
+        margin-top: 1.4rem
+    }
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between; 
+        margin-top: 0rem
+    }
+}
+.horarios {
+    @extend %flex-column-center;
+    width: 50%;
+    margin: 6rem;
+
+    @include mobile {
+        width: 90%;
+        margin: 2rem;
+        margin-bottom: 3rem
+    }
+
+    @include tablet {
+        width: 70%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+.borde {
+    @extend %fondo;
+    padding: 3rem;
+
+    @include mobile {
+        border: $bordefino;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    @include tablet {
+        border: $bordefino;
+        font-size: 2rem;
+        padding: 2rem;
+    }
+}
+
+.tamaño-horarios {
+    font-size: 2rem;
+    margin: 2rem;
+
+    @include mobile {
+        font-size: 1.2rem;
+    }
+
+    @include tablet {
+        font-size: 2rem;
+    }
+}
+
+

@@ -1,0 +1,61 @@
+/* fuente de letra */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); 
+
+// partials
+
+@import "variables";
+@import "reset";
+@import "mediaqueries";
+@import "header";
+@import "titulos";
+@import "carrusel";
+@import "tablas";
+@import "reservas";
+@import "cantina";
+@import "galeria";
+@import "formulario";
+@import "boton";
+@import "footer";
+
+html {
+    font-size: 62.5%;
+    
+    /* body */
+    body {
+        background-color: $green ;
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        overflow-x: hidden;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .centrar {
+            @extend %flex-row-center;
+            align-items: center;
+        }
+
+        /* parrafos */
+        p {
+            font-size: 2rem;
+            font-weight: 250;
+            text-align: center;
+            margin: 1rem;
+
+            @include mobile {
+                font-size: 1rem;
+            }
+            
+            @include mobile {
+                font-size: 1.7rem;
+            }
+
+        }
+    
+    }
+
+}
