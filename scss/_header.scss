@@ -7,7 +7,7 @@ header {
         border: none;
 
         @include mobile{
-            @include sizes (7rem, 7rem);
+            @include sizes (9rem, 9rem);
             margin-left: 4rem;
         }
         
@@ -32,7 +32,7 @@ header {
         padding-bottom: 0rem;
 
         @include mobile {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             border: none;
             padding-left: 2.5rem; 
             padding-top: 1.5rem;
@@ -69,10 +69,22 @@ header {
 
         @include mobile {
             border: $bordefino;
+            margin-right: 2rem;
         }
 
         @include tablet {
             border: $bordefino;
+            margin-right: 4rem;
+            width: 5rem;
+            height: 4rem;
+        }
+    }
+
+    .navbar-toggler-icon {
+
+        @include tablet{
+            width: 3rem;
+            height: 3rem; 
         }
     }
 }

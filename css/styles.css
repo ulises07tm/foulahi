@@ -42,8 +42,8 @@ header .icono {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header .icono {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     margin-left: 4rem;
   }
 }
@@ -69,7 +69,7 @@ header .navbar-nav li.nav-item a.nav-link {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header .navbar-nav li.nav-item a.nav-link {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border: none;
     padding-left: 2.5rem;
     padding-top: 1.5rem;
@@ -103,11 +103,21 @@ header .navbar-nav li.nav-item a.nav-link .none-border {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header .navbar-toggler {
     border: solid 0.1rem #aedd94;
+    margin-right: 2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header .navbar-toggler {
     border: solid 0.1rem #aedd94;
+    margin-right: 4rem;
+    width: 5rem;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .navbar-toggler-icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
 
@@ -646,6 +656,14 @@ section form select {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form select {
+    width: 25rem;
+    height: 6rem;
+    border: solid 0.1rem #aedd94;
+    font-size: 2.3rem;
+  }
+}
 section form label {
   font-size: 3rem;
   padding: 1.1rem;
@@ -657,6 +675,13 @@ section form label {
     width: 20rem;
     height: 2rem;
     font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form label {
+    width: 25rem;
+    height: 6rem;
+    font-size: 2.3rem;
   }
 }
 section form input {
@@ -672,6 +697,14 @@ section form input {
     height: 4.3rem;
     border: solid 0.1rem #aedd94;
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form input {
+    width: 25rem;
+    height: 6rem;
+    border: solid 0.1rem #aedd94;
+    font-size: 2.3rem;
   }
 }
 section form textarea {
@@ -690,6 +723,14 @@ section form textarea {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form textarea {
+    width: 25rem;
+    height: 15rem;
+    border: solid 0.1rem #aedd94;
+    font-size: 2.3rem;
+  }
+}
 section form .btn-submit {
   color: white;
   border-top-right-radius: 25%;
@@ -704,8 +745,16 @@ section form .btn-submit {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   section form .btn-submit {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 8rem;
+    padding: 0rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form .btn-submit {
+    font-size: 2.5rem;
+    width: 13rem;
     padding: 0rem;
     margin-bottom: 3rem;
   }
@@ -713,6 +762,17 @@ section form .btn-submit {
 section form .btn-submit:hover {
   color: #aedd94;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  section form .btn-submit:hover {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section form .btn-submit:hover {
+    display: none;
+  }
+}
+
 /* boton hace tu reserva */
 .btn-reserva {
   text-align: center;
@@ -999,12 +1059,25 @@ html body p {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   html body p {
     font-size: 1.7rem;
   }
 }
 html body .parrafo {
   text-align: center;
+  font-size: 2.5rem;
   margin: 7rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body .parrafo {
+    font-size: 1.4rem;
+    margin: 4rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body .parrafo {
+    font-size: 2rem;
+    margin: 5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
