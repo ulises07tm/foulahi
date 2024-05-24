@@ -1003,4 +1003,8 @@ html body p {
   html body p {
     font-size: 1.7rem;
   }
+}
+html body .parrafo {
+  text-align: center;
+  margin: 7rem;
 }/*# sourceMappingURL=styles.css.map */
