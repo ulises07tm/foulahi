@@ -8,37 +8,38 @@ section {
         select {
             @extend %fondo;
             color: white;
+            width: 50rem;
             font-size: 2.4rem;
             padding: 1.3rem;
-            margin: 1rem;
-            width: 50rem;
+            margin-bottom: 5rem;
 
             @include mobile {
                 @include sizes (20rem, 4.3rem);
                 border: $bordefino;
                 font-size: 1.4rem;
+                margin-bottom: 2.5rem;
             }
 
             @include tablet {
                 @include sizes (25rem, 6rem);
                 border: $bordefino;
                 font-size: 2.3rem;
+                margin-bottom: 3rem;
             }
         }
         
         label {
+            width: 47rem;
             font-size: 3rem;
-            padding: 1.1rem;
             margin: 1rem;
-            text-align: left;
 
             @include mobile {
-                @include sizes (20rem, 2rem);
+                @include sizes (19rem, 2rem);
                 font-size: 1.5rem;
             }
 
             @include tablet {
-                @include sizes (25rem, 6rem);
+                @include sizes (23rem, 3rem);
                 font-size: 2.3rem;
             }
         }
@@ -46,21 +47,23 @@ section {
         input {
             @extend %fondo;
             color: white;
+            width: 50rem;
             font-size: 2rem;
             padding: 1.6rem;
-            margin: 0.5rem;
-            width: 50rem;
+            margin-bottom: 5rem;
 
             @include mobile {
                 @include sizes (20rem, 4.3rem);
                 border: $bordefino;
                 font-size: 1.2rem;
+                margin-bottom: 2.5rem;
             }
 
             @include tablet {
                 @include sizes (25rem, 6rem);
                 border: $bordefino;
                 font-size: 2.3rem;
+                margin-bottom: 4rem;
             }
         }
         

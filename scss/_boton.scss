@@ -3,19 +3,19 @@
         text-align: center;
         font-size: 3rem;
         font-weight: 400;
-        margin: 4rem;
+        margin-bottom: 8rem;
 
         @include mobile {
             font-size: 1.5rem;
             font-weight: 300;
             margin-top: 3rem;
-            margin-bottom: 3.5rem;
+            margin-bottom: 3.2rem;
         }
 
         @include tablet {
             font-weight: 300;
             margin-top: 4rem;
-            margin-bottom: 6rem;
+            margin-bottom: 5rem;
         }
 
         

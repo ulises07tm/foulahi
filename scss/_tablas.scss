@@ -4,6 +4,7 @@ table {
     font-size: 3.5rem;
     margin: 3rem;
     text-align: center;
+    border-radius: 4px;
 
     @include mobile {
         border: $bordefino;
@@ -49,14 +50,87 @@ table {
     
 }
 
+
     .estirado-horizontal {
-        width: 100%;
+        @include desktop {
+            width: 80%;
+        }
 
         @include mobile {
-            font-size: 0.8rem;
+            font-size: 1.2rem;
         }
 
         @include tablet {
             font-size: 2.3rem;
         }
+    }
+
+    .tabla-reserva {
+        
+        & td {
+            @include mobile {
+                padding: 0.6rem;
+            }
+    
+            @include tablet {
+                padding: 1.5rem;
+            }
+        }
+        
+        & th {
+            @include mobile {
+                padding: 0.6rem;
+            }
+        
+            @include tablet {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    .tabla-color {
+        
+        & td {
+            font-size: 2.7rem;
+            border: none;
+            
+            @include mobile {
+                font-size: 1.1rem;
+            }
+    
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .tabla-cuadrado1 {
+        @include sizes (3rem, 3rem);
+        background: $lightgreen;
+        display: inline-block;
+        border-radius: 0.4rem;
+        margin-right: 0.8rem;
+
+        @include mobile {
+            @include sizes (1.1rem, 1.1rem);
+        }
+
+        @include tablet {
+            @include sizes (2rem, 2rem);
+        }
+    }
+
+    .tabla-cuadrado2 {
+    @extend .tabla-cuadrado1; 
+    background: $darkgreen;
+    }
+
+    .tabla-cuadrado3 {
+        @extend .tabla-cuadrado1;
+        background: skyblue;
+    }
+
+
+    .border-none {
+        border: none;
     }

@@ -12,39 +12,29 @@
 }
 .precios {
     @include flex (column, space-evenly, center);
+    width: 30rem;
 
     @include mobile {
         flex-direction: row;
         justify-content: space-between; 
-        margin-top: 1.4rem
+        margin-top: 1.4rem;
+        width: 25rem;
     }
 
     @include tablet {
         flex-direction: row;
         justify-content: space-between; 
-        margin-top: 0rem
+        margin-top: 0rem;
+        width: 40rem;
     }
 }
-.horarios {
-    @extend %flex-column-center;
-    width: 50%;
-    margin: 6rem;
 
-    @include mobile {
-        width: 90%;
-        margin: 2rem;
-        margin-bottom: 3rem
-    }
-
-    @include tablet {
-        width: 70%;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-}
-.borde {
+.borde-precio {
     @extend %fondo;
+    text-align: center;
+    font-size: 2.5rem;
     padding: 3rem;
+    width: 100%;
 
     @include mobile {
         border: $bordefino;
@@ -59,16 +49,52 @@
     }
 }
 
+.horarios {
+    @extend %flex-column-center;
+    margin: 6rem;
+
+    @include mobile {
+        margin: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    @include tablet {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
 .tamaño-horarios {
-    font-size: 2rem;
-    margin: 2rem;
+    font-size: 2.5rem;
+    margin: 2.2rem;
 
     @include mobile {
         font-size: 1.2rem;
+        margin: 1rem;
     }
 
     @include tablet {
         font-size: 2rem;
+    }
+}
+
+.borde-horarios {
+    @extend %fondo;
+    padding: 3rem;
+    width: 150rem;
+
+    @include mobile {
+        border: $bordefino;
+        font-size: 1.3rem;
+        padding: 1rem;
+        width: 95%;
+    }
+
+    @include tablet {
+        border: $bordefino;
+        font-size: 2rem;
+        padding: 2rem;
+        width: 95%;
     }
 }
 
